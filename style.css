@@ -1,0 +1,48 @@
+
+body {
+    width: 80%; /* O cualquier ancho específico */
+    margin: 0 auto;
+}
+
+form{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+label{
+    font-weight: bold;
+    margin-right: .5em;
+}
+.input{
+    margin-top: 1em;
+}
+button{
+    padding: .5em;
+    border: none;
+    border-radius: 0;
+    background-color: chocolate;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+th, td{
+    padding: 1em;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0;
+}
+
+th{
+    background-color: rgb(214, 73, 102);
+}
+
+td{
+    background-color: blanchedalmond;
+}
+h1,h3{
+    text-align: center;
+}

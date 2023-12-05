@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <link rel="stylesheet" href="style_materialize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h1>Mi aplicacion de gastos</h1>
+    <div class="row">
+        <div class="col l6 s12">
+            <div class="col s8 offset-s2">
+                <form action="" id="form" class="col s12">
+                    <div class="row">
+                        <div class="input">
+                    
+                                <span>Transacion</span>
+                                <i class="material-icons">apps</i>
+                                <label for="ingreso">
+                                    <input name="ingreso" type="radio" required id="ingreso" value="ingreso"/>
+                                    <span>Ingreso</span>
+                                </label>
+                                <label for="egreso">
+                                    <input name="ingreso" type="radio" required id="egreso" value="egreso"/>
+                                    <span>Egreso</span>
+                                </label>
+                            
+                            <!--
+                            <label for="ingreso">Ingreso</label>
+                            <input required type="radio" name="ingreso" id="egreso" value="ingreso">
+                            <label for="egreso">Egreso</label>
+                            <input required type="radio" name="ingreso" id="egreso" value="egreso">
+                            -->
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="descripcion" type="text" class="validate" name="descripcion">
+                            <label for="descripcion">Descripcion</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="monto" type="number" class="validate" name="monto" min="0" max="2000">
+                            <label for="monto">Monto</label>
+                        </div>
+                        <div class="input">
+                            <label for="categoria">Categoria</label>
+                            <select type="text" name="categoria" id="categoria" class="icon">
+                                <!--
+                                <option value="Alquiler">Alquiler</option>
+                                <option value="Comida">Comida</option>
+                                <option value="Diversion">Diversion</option>
+                                -->
+                            </select>
+                            
+                        </div>
+                    </div>
+                    
+                        <!--
+                        <label for="categoria">Categoria</label>
+                        <select type="text" name="categoria" id="categoria">
+                            <option value="Alquiler">Alquiler</option>
+                            <option value="Comida">Comida</option>
+                            <option value="Diversion">Diversion</option>
+                        </select>
+                        -->
+                        
+    
+                    <div class="input">
+                        <button id="button">Ingresar</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div class="col l5 s12">
+            <div class="table">
+                <table id="table1" data-name='hector'>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Descripcion</th>
+                        <th>Monto</th>
+                        <th>Categoria</th>
+                        <th>eliminar</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div date-title="floriambra">
+        <h3>floriambra</h3>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
